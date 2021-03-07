@@ -2,7 +2,7 @@
     <div class="todoinput">
         <input type="text" placeholder="請輸入內容" v-model="todo" @keyup.enter="enterHandler" v-focus>
         <input type="button" value="送出" @click="enterHandler">
-    </div>
+    </div> 
 </template>
 
 <script>

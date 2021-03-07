@@ -24,6 +24,7 @@ export default {
   computed:{
     todoIndex(){
       return this.$store.getters['todoIndex']
+      
     }
   },
   mounted(){
