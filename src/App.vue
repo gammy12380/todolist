@@ -5,21 +5,21 @@
       <router-link to="/active">未完成</router-link> |
       <router-link to="/complete">已完成</router-link>
     </div>
-    <todoinput/>
+    <Todoinput/>
     <div class="todoitem">
-      <todolistitem v-for="index in todoIndex" :key="index" :index="index"/>
+      <Todolistitem v-for="index in todoIndex" :key="index" :index="index"/>
     </div>
   </div>
 </template>
 
 <script>
-import todoinput from '@/components/todoinput/todoinput.vue'
-import todolistitem from '@/components/todolistitem/todolistitem.vue'
+import Todoinput from '@/components/Todoinput/Todoinput.vue'
+import Todolistitem from '@/components/Todolistitem/Todolistitem.vue'
 
 export default {
   components:{
-    todoinput,
-    todolistitem
+    Todoinput,
+    Todolistitem
   },
   computed:{
     todoIndex(){
